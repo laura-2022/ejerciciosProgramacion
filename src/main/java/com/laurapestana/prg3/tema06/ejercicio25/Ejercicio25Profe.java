@@ -7,7 +7,7 @@ public class Ejercicio25Profe {
     public static final int longitud = 50;
 
     public Ejercicio25Profe() {
-        int[] arrayV = rellenarArray();
+        int[] arrayV = RellenarRandomArray();
         int[] arrayP = imprimirArrayP(arrayV);
         if(arrayP==null){
             System.out.println("no hay pares");
@@ -20,7 +20,7 @@ public class Ejercicio25Profe {
     }
 
     // Relleno el array con función Math.random()
-    private int[] rellenarArray() {
+    private int[] RellenarRandomArray() {
         int[] arrayV = new int[longitud];
         for (int i = 0; i < arrayV.length; i++) {
             arrayV[i] = (int) (Math.random() * 100);
